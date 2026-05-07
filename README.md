@@ -82,6 +82,59 @@ TEST SCENARIOS:
    iv. Complete the checkout process.
    
    Actual Result: Succesfully verified that the checkout is successful and an order confirmation is received.
+
+GETTING STARTED:
+
+Prerequisites:
+
+Before running this project, make sure the following are installed
+
+Java JDK 8 or above
+
+Maven
+
+Chrome / Edge browser
+
+IDE (IntelliJ IDEA or Eclipse)
+
+Installation & Setup:
+
+1. Clone the repository
+
+   git clone https://github.com/mahadevgautam7/seleniumproject.git
+
+2. Install Maven dependencies
+
+3. Run the tests using TestNG or Maven
+
+HOW THE TEST WORKS:
+
+1. Base Setup (Driver Initialization)
+
+   BaseClass.java : Opens browser (Edge)
+
+                     Sets WebDriver
+
+                     Handles setup and teardown (@BeforeMethod, @AfterMethod)
+
+2. Page Classes (POM Model)
+   src/main/java/pages LoginPage.java
+
+   These contain:
+   
+   Web Elements (buttons, input fields)
+
+   Methods for actions (login(),addToCart(),etc)
+
+3. Test execution files:
+
+   Located in src/test/java/tests
+
+   These are the actual test scripts using TestNG.
+
+   
+   
+   
    
    
 
