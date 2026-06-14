@@ -11,10 +11,10 @@ public class ErrorMessageValidation extends BaseClass {
     @Test
         public void errorMessageTest(){
            LoginPage lpg = new LoginPage(driver);
-           lpg.enterUserName("invaliduser");
-           lpg.enterPassword("secret");
-           lpg.clickOnLoginButton();
-           WebElement errorMessage = driver.findElement(By.cssSelector("h3[data-test='error']")); // find errorMessage element
-            Assert.assertTrue(errorMessage.isDisplayed(),"Error message is not displayed"); // tests whether that errorMessage element is visible or not
+           lpg.login("invalid_user","secret_sauce");
+        Assert.assertTrue(
+                lpg.isErrorDisplayed(),
+                "Error message is not displayed"
+        );
         }
 }

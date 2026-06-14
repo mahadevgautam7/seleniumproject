@@ -15,7 +15,7 @@ public class BaseClass {
         driver = new EdgeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.get("https://saucedemo.com/");
+        driver.get("https://www.google.com/");
     }
     @AfterMethod
     public void tearDown(){
