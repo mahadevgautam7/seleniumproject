@@ -18,19 +18,12 @@ public class CartValidation extends BaseClass {
 
         int items = 3;
 
-        loginPage.login(
-                "standard_user",
-                "secret_sauce"
-        );
+        loginPage.login("standard_user", "secret_sauce");
 
         inventoryPage.addItemsToCart(items);
 
         inventoryPage.openCart();
 
-        Assert.assertEquals(
-                cartPage.getCartItemCount(),
-                items,
-                "Items are not added to cart correctly"
-        );
+        Assert.assertEquals(cartPage.getCartItemCount(), items, "Items are not added to cart correctly");
     }
 }

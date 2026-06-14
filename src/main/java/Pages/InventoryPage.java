@@ -10,23 +10,17 @@ public class InventoryPage {
 
     WebDriver driver;
 
-    private By addToCartButtons =
-            By.xpath("//button[text()='Add to cart']");
+    private By addToCartButtons = By.xpath("//button[text()='Add to cart']");
 
-    private By cartButton =
-            By.className("shopping_cart_link");
+    private By cartButton = By.className("shopping_cart_link");
 
-    private By inventoryContainer =
-            By.id("inventory_container");
+    private By inventoryContainer = By.id("inventory_container");
 
-    private By productNames =
-            By.className("inventory_item_name");
+    private By productNames = By.className("inventory_item_name");
 
-    private By productPrices =
-            By.className("inventory_item_price");
+    private By productPrices = By.className("inventory_item_price");
 
-    private By sortDropdown =
-            By.className("product_sort_container");
+    private By sortDropdown = By.className("product_sort_container");
 
     public InventoryPage(WebDriver driver){
         this.driver = driver;

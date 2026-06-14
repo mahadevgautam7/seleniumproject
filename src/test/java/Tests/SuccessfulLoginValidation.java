@@ -16,9 +16,6 @@ public class SuccessfulLoginValidation extends BaseClass {
 
         loginPage.login("standard_user", "secret_sauce");
 
-        Assert.assertTrue(
-                inventoryPage.isInventoryDisplayed(),
-                "Not Logged In Yet"
-        );
+        Assert.assertTrue(inventoryPage.isInventoryDisplayed(), "Not Logged In Yet");
     }
 }

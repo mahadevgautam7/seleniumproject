@@ -12,9 +12,6 @@ public class ErrorMessageValidation extends BaseClass {
         public void errorMessageTest(){
            LoginPage lpg = new LoginPage(driver);
            lpg.login("invalid_user","secret_sauce");
-        Assert.assertTrue(
-                lpg.isErrorDisplayed(),
-                "Error message is not displayed"
-        );
+        Assert.assertTrue(lpg.isErrorDisplayed(), "Error message is not displayed");
         }
 }

@@ -7,20 +7,15 @@ public class CheckoutPage {
 
     WebDriver driver;
 
-    private By firstName =
-            By.id("first-name");
+    private By firstName = By.id("first-name");
 
-    private By lastName =
-            By.id("last-name");
+    private By lastName = By.id("last-name");
 
-    private By postalCode =
-            By.id("postal-code");
+    private By postalCode = By.id("postal-code");
 
-    private By continueButton =
-            By.id("continue");
+    private By continueButton = By.id("continue");
 
-    private By finishButton =
-            By.id("finish");
+    private By finishButton = By.id("finish");
 
     public CheckoutPage(WebDriver driver){
         this.driver = driver;

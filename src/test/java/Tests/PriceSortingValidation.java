@@ -28,10 +28,6 @@ public class PriceSortingValidation extends BaseClass {
 
         Collections.sort(expectedPrices);
 
-        Assert.assertEquals(
-                actualPrices,
-                expectedPrices,
-                "Price Sorting Low-High Failed"
-        );
+        Assert.assertEquals(actualPrices, expectedPrices, "Price Sorting Low-High Failed");
     }
 }

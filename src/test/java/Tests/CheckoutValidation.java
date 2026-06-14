@@ -18,13 +18,10 @@ public class CheckoutValidation extends BaseClass {
         InventoryPage inventoryPage = new InventoryPage(driver);
         CartPage cartPage = new CartPage(driver);
         CheckoutPage checkoutPage = new CheckoutPage(driver);
-        CheckoutCompletePage completePage =
-                new CheckoutCompletePage(driver);
+        CheckoutCompletePage completePage = new CheckoutCompletePage(driver);
 
         loginPage.login(
-                "standard_user",
-                "secret_sauce"
-        );
+                "standard_user", "secret_sauce");
 
         inventoryPage.addItemsToCart(2);
 
@@ -32,19 +29,13 @@ public class CheckoutValidation extends BaseClass {
 
         cartPage.clickCheckout();
 
-        checkoutPage.enterDetails(
-                "Miraj",
-                "Gautam",
-                "3360"
-        );
+        checkoutPage.enterDetails("Miraj", "Gautam", "3360");
 
         checkoutPage.clickContinue();
 
         checkoutPage.clickFinish();
 
         Assert.assertTrue(
-                completePage.isCheckoutSuccessful(),
-                "Order Unsuccessful"
-        );
+                completePage.isCheckoutSuccessful(), "Order Unsuccessful");
     }
 }

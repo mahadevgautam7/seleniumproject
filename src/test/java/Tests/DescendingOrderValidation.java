@@ -27,10 +27,6 @@ public class DescendingOrderValidation extends BaseClass {
         List<String> expectedNames = new ArrayList<>(actualNames);
         expectedNames.sort(Collections.reverseOrder());
 
-        Assert.assertEquals(
-                actualNames,
-                expectedNames,
-                "Descending Filter for Name Failed"
-        );
+        Assert.assertEquals(actualNames, expectedNames, "Descending Filter for Name Failed");
     }
 }

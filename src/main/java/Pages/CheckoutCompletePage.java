@@ -7,8 +7,7 @@ public class CheckoutCompletePage {
 
     WebDriver driver;
 
-    private By completeContainer =
-            By.id("checkout_complete_container");
+    private By completeContainer = By.id("checkout_complete_container");
 
     public CheckoutCompletePage(WebDriver driver){
         this.driver = driver;
